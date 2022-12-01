@@ -3,6 +3,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
 }
 
 * {
@@ -11,7 +12,10 @@ body {
 }
 
 .site-container {
-    padding: 0 30px;
+    /* padding: 0 30px; */
+    width: 90%;
+    max-width: 1224px;
+    margin: auto;
 }
 
 .heading {
@@ -113,25 +117,11 @@ a {
 
 /* hero start */
 .hero {
-    background-color: gray;
+    background-image: url(/resources/content/16-2500x1667.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
-video {
-  object-fit: cover;
-  height: 91vh;
-  width: 100%;
-  /* position: fixed; */
-}
-
-/* .overlay {
-    width: 100%;
-    height: 110vh;
-    background-image: linear-gradient(to top, #ffffff, #b9b9b9, #777777, #3b3b3b, #000000);
-    opacity: 0.2;
-    top: 0;
-    left: 0;
-    right: 0;
-    position: absolute;
-} */
 
 .content-container {
     display: flex;
@@ -159,11 +149,6 @@ video {
 /* hero end */
 
 /* text block start */
-/* .text-block {
-    background-image: url(/resources/content/bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-} */
 
 .about-heading {
     padding-top: 50px;
@@ -210,8 +195,8 @@ video {
 
 .info-banner {
     border-radius: 15px;
-    background-color: gray;
-    color: white;
+    background-color: lightgray;
+    color: black;
 }
 
 .info-heading {
@@ -239,14 +224,133 @@ video {
 
 /* text block end */
 
-/* Popup start */
+/* testimonials start */
+
+.testimonials-block {
+    background-color: lightgray;
+    color: black;
+}
+
+.swiper {
+    width: 100%;
+    /* max-width: 300px; */
+    /* height: 300px; */
+    height: 100%;
+    min-height: 400px;
+    padding-top: 30px;
+}
+
+.swiper-person {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.swiper-text {
+    margin: auto;
+    text-align: center;
+    margin-top: 24px;
+    padding-bottom: 24px;
+    width: 100%;
+    max-width: 80%;
+    line-height: 24px;
+}
+
+.testimonial-heading {
+    padding-top: 40px;
+}
+
+.testimonial-people {
+    border-radius: 50%;
+    width: 100%;
+    max-width: 100px;
+    border: solid 2px white;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    color: black !important;
+}
+
+@media only screen and (max-width: 767px) {
+    .swiper-button-prev, .swiper-button-next {
+        display: none !important;
+    }
+    .swiper-text {
+        max-width: 300px;
+        width: 100%;
+    }
+    .swiper-person {
+        margin-top: 50px;
+    }
+}
+
+/* testimonials end */
+
+/* services start */
+
+.services-wrapper {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.service-content {
+    border: solid 3px white;
+    border-radius: 15px;
+    padding: 30px;
+    background-color: lightgray;
+    color: black;
+}
+
+.services-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services {
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.service-heading {
+    font-weight: 700;
+    margin-bottom: 16px;
+
+}
+
+.service-img {
+    background-color: lightgray;
+    color: black;
+    border-radius: 50%;
+    width: 100%;
+    max-width: 50px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.services-lower-text {
+    text-align: center;
+}
+
+@media only screen and (min-width: 767px) {
+    .services-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
 
 
-/* Popup end */
+/* services end */
 
 /* contact start */
 .contact-block {
     background-color: lightgray;
+    color: black;
 }
 
 .contact-wrapper {
@@ -269,7 +373,7 @@ video {
 input[type=text], select, textarea {
     width: 100%; /* Full width */
     padding: 12px; /* Some padding */  
-    border: 1px solid #ccc; /* Gray border */
+    border: 1px solid black; /* Gray border */
     border-radius: 15px; /* Rounded borders */
     box-sizing: border-box; /* Make sure that padding and width stays in place */
     margin-top: 6px; /* Add a top margin */
@@ -277,23 +381,19 @@ input[type=text], select, textarea {
     resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
 }
   
-/* Style the submit button with a specific background color etc */
+
 input[type=submit] {
     background-color: black;
-    transition: ease-in-out 300ms all;
     color: white;
-    padding: 12px 20px;
+    border: solid 1px white;
+    transition: ease-in-out 300ms all;
+    padding: 12px 18px;
     border: none;
     border-radius: 15px;
     cursor: pointer;
+    font-weight: 600;
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-background-color: white;
-color: black;
-}
-  
 /* contact end */
 
 /* footer start */
@@ -309,12 +409,15 @@ footer {
     margin-top: 20px;
 }
 
+.footer-wrapper {
+    font-weight: 700;
+    letter-spacing: 1px;
+}
 @media only screen and (min-width: 768px) {
     .footer-wrapper {
         display: flex;
         justify-content: space-between;
         max-width: 1224px;
-        width: 90%;
         margin: 0 auto;
     }
 
@@ -326,50 +429,5 @@ footer {
 /* footer end */
 
 
-
-
-
-
-
-
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: hidden; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  
-  /* Modal Content/Box */
-  .modal-content {
-    background-color: lightgray;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 90%; /* Could be more or less, depending on screen size */
-    height: 100vh;
-    /* border-radius: 30px; */
-  }
-  
-  /* The Close Button */
-  .close {
-    color: #000;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-  }
 
 

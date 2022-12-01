@@ -9,7 +9,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
 
 
 </head>
@@ -42,7 +47,6 @@
 
     <!-- Hero Start -->
     <section class="hero">
-        <!-- <video autoplay muted loop src="/resources/content/hero.mp4" class="video"></video> -->
         <div class="site-container">
             <div class="hero-wrapper">
                 <div class="overlay">
@@ -51,9 +55,12 @@
 
                 <div class="content-container">
                     <img src="/resources/content/logo.svg" alt="demo logo" class="hero-logo">
-                    <h1 class="hero-heading">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, ipsa?
+                    <h1 class="hero-heading" id="message">
+                        <!-- Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, ipsa? -->
                     </h1>
+
+                    <p id="message"><p></p>
+
                 </div>
             </div>
         </div>
@@ -116,11 +123,138 @@
     </section>
     <!-- text block end -->
 
-    <!-- popups start -->
-    <section class="popup-block">
+    <!-- testimonials start -->
+    <section class="testimonials-block">
+        <div class="site-container">
+            <div class="testimonials-wrapper">
+                <h2 class="heading testimonial-heading">
+                    What Our Customers Say
+                </h2>
+                 <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="swiper-person">
+                                <img src="/resources/content/person1.jpg" alt="random person photo" class="testimonial-people">
+                            </div>
+                            <p class="swiper-text">
+                                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere aperiam corporis explicabo accusantium soluta ipsam repudiandae sint ipsum exercitationem 
+                                hic deserunt enim animi autem dolore, eum impedit delectus, quaerat cupiditate? Facere, recusandae. Temporibus quisquam eum quas sed illum quis incidunt!"
+                            </p>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="swiper-person">
+                                <img src="/resources/content/person2.jpg" alt="random person photo" class="testimonial-people">
+                            </div>
+                            <p class="swiper-text">
+                                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere aperiam corporis explicabo accusantium soluta ipsam repudiandae sint ipsum exercitationem 
+                                hic deserunt enim animi autem dolore, eum impedit delectus, quaerat cupiditate? Facere, recusandae. Temporibus quisquam eum quas sed illum quis incidunt!"
+                            </p>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="swiper-person">
+                                <img src="/resources/content/person3.jpg" alt="random person photo" class="testimonial-people">
+                            </div>
+                            <p class="swiper-text">
+                               "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere aperiam corporis explicabo accusantium soluta ipsam repudiandae sint ipsum exercitationem 
+                               hic deserunt enim animi autem dolore, eum impedit delectus, quaerat cupiditate? Facere, recusandae. Temporibus quisquam eum quas sed illum quis incidunt!"
+                            </p>
+                        </div>
+
+
+
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- testimonials end -->
+
+    <!-- services start -->
+    <section class="services-block">
+        <div class="site-container">
+            <div class="services-wrapper">
+                <h2 class="heading">
+                    Our Services
+                </h2>
+
+                <div class="services-container">
+                    <div class="service-content services">
+                        <img src="./resources/content/lightbulb-png-835.png" alt="demo img" class="service-img">
+
+                        <p class="service-heading">
+                            Service Heading
+                        </p>
+
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing.
+                        </p>
+
+
+                    </div>
+
+                    <div class="service-content services">
+                        <img src="./resources/content/lightbulb-png-835.png" alt="demo img" class="service-img">
+
+                        <p class="service-heading">
+                            Service Heading
+                        </p>
+
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing.
+                        </p>
+
+
+                    </div>
+
+                    <div class="service-content services">
+                        <img src="./resources/content/lightbulb-png-835.png" alt="demo img" class="service-img">
+
+                        <p class="service-heading">
+                            Service Heading
+                        </p>
+
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing.
+                        </p>
+
+
+                    </div>
+
+                    <div class="service-content services">
+                        <img src="./resources/content/lightbulb-png-835.png" alt="demo img" class="service-img">
+
+                        <p class="service-heading">
+                            Service Heading
+                        </p>
+
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing.
+                        </p>
+
+
+                    </div>
+                </div>
+
+                <p class="services-lower-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit tempore culpa nulla perferendis veniam earum itaque libero, sequi alias incidunt.
+                </p>
+            </div>
+        </div>
 
     </section>
-    <!-- popups end -->
+    <!-- services end -->
 
 
 
@@ -193,6 +327,7 @@
 
 
     <!-- Javascript below -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="/resources/javascript/main.js"></script>
 </body>
 </html>
