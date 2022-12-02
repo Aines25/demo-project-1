@@ -23,11 +23,6 @@ body {
     padding-bottom: 24px;
 }
 
-/* header styling */
-/* header {
-    background-color: black;
-} */
-
 .nav-item {
     list-style: none;
 }
@@ -100,7 +95,6 @@ a {
         top: 70px;
         gap: 0;
         flex-direction: column;
-        background-color: #262626;
         width: 100%;
         text-align: center;
         transition: 0.3s;
