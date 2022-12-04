@@ -143,6 +143,7 @@ a {
     width: 100%;
     max-width: 300px;
     height: auto;
+    margin-top: -200px;
 }
 
 .hero-heading {
@@ -152,11 +153,11 @@ a {
     max-width: 600px;
 }
 
-@media only screen and (max-width: 1200px) and (min-width: 768px)  {
+/* @media only screen and (max-width: 1200px) and (min-width: 768px)  {
     .hero-logo {
         margin-top: -200px;
     }
-}
+} */
 @media only screen and (min-width: 768px) {
     .hero-heading {
         font-size: 32px;
