@@ -117,7 +117,7 @@ a {
 
 /* hero start */
 .hero {
-    background-image: url("/resources/content/16-2500x1667.jpg");
+    background-image: url("resources/content/16-2500x1667.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
