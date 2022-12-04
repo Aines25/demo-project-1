@@ -359,7 +359,7 @@ a {
 
 .services {
     width: 100%;
-    max-width: 200px;
+    max-width: 250px;
     text-align: center;
     margin-bottom: 32px;
 }
@@ -388,7 +388,7 @@ a {
     .services-container {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
     }
